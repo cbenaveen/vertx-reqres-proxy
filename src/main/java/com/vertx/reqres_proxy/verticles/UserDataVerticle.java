@@ -21,6 +21,4 @@ public class UserDataVerticle extends AbstractVerticle {
     vertx.eventBus().consumer(LIST_USER_ADDRESS, new ListUsersEventHandler(webClient));
     vertx.eventBus().consumer(GET_USER_DETAILS_ADDRESS, new GetUserDetailsByIdEventHandler(webClient));
   }
-
-
 }
